@@ -1,0 +1,24 @@
+import java.util.*;
+class aks
+{
+    void fibo(int i,int a,int b,int c)
+    {
+        if( i>=0)
+        {
+             c= a+b;
+            System.out.println(c);
+             a=b;
+             b=c;
+             fibo(i-1,a,b,c);
+        } 
+    }
+    
+}
+class main
+{
+    public static void main(String args[])
+    {
+        aks ak = new aks();
+        ak.fibo(10,0,1,0);
+    }
+}
