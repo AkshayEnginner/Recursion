@@ -1,0 +1,23 @@
+import java.util.*;
+class aks
+{
+    void table(int Tno,int i)
+    {
+        if(i<=10)
+        {
+            System.out.println(Tno*i);
+            table(Tno,i+1);
+        }
+    }
+}
+class main
+{
+    public static void main(String args[])
+    {
+        aks a = new aks();
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the table no");
+        int Tno=sc.nextInt();
+        a.table(Tno,1);
+    }
+}
